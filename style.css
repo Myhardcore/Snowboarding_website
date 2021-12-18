@@ -50,11 +50,6 @@ h5 {
   width: 100%;
   justify-content: space-between;
   height: 110px;
-  /* position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000; */
 }
 .menu__nav a {
   color: #fff;
@@ -112,7 +107,7 @@ h5 {
   font-size: 80px;
   font-family: "ProximaNova Extrabld", sans-serif;
   text-transform: uppercase;
-  width:600px;
+  width: 600px;
   line-height: 1.1;
   padding-left: 180px;
   margin-top: 180px;
@@ -123,19 +118,18 @@ h5 {
   max-width: 960px;
   margin: 0 auto;
 }
-.slider__button{
-    text-decoration: none;
-    color: #fff;
-    background-color: #000;
-    padding: 18px 33px;
-    text-transform: uppercase;
-    font-size: 14px;
-    font-family: "ProximaNova Extrabld", sans-serif;
-    margin-left: 530px;
-    transition: .5s;
-   
+.slider__button {
+  text-decoration: none;
+  color: #fff;
+  background-color: #000;
+  padding: 18px 33px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: "ProximaNova Extrabld", sans-serif;
+  margin-left: 530px;
+  transition: 0.5s;
 }
-.slider__button:hover{
-    background-color: #4680ae;
-    color: #000;
+.slider__button:hover {
+  background-color: #4680ae;
+  color: #000;
 }
