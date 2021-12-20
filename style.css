@@ -60,10 +60,13 @@ h5 {
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
+  transition: 0.2s;
 }
-.menu-logo {
-  display: inline-block;
+.menu__nav a:hover {
+  color: #f69ca1;
+  border-bottom: 2px solid #f69ca1;
 }
+
 .menu__left {
   display: flex;
   align-items: center;
@@ -71,28 +74,41 @@ h5 {
 }
 .menu__logo {
   padding-right: 40px;
+  cursor: pointer;
+}
+.menu__logo img {
+  transition: 0.2s;
+}
+.menu__logo img:hover {
+  transform: scale(1.1);
 }
 .menu__nav a {
   font-family: "ProximaNova Semibold", sans-serif;
   font-size: 13px;
 }
 .menu__nav .nav__item + .nav__item {
-  padding-left: 20px;
+  margin-left: 20px;
 }
 .menu__right .fas {
   font-size: 13px;
   color: #fff;
+  transition: 0.2s;
 }
 .menu__right {
   display: flex;
   align-items: center;
   padding-right: 90px;
 }
+.menu__right .fa-search:hover,
+.menu__right .fa-shopping-bag:hover {
+  color: #f69ca1;
+  border-bottom: 2px solid #f69ca1;
+}
 .menu__right a:nth-child(2) {
-  padding-left: 30px;
+  margin-left: 30px;
 }
 .menu__right a:nth-child(3) {
-  padding-left: 10px;
+  margin-left: 10px;
   font-family: "ProximaNova Semibold", sans-serif;
   text-decoration: none;
   color: #fff;
@@ -112,7 +128,7 @@ h5 {
   font-size: 80px;
   font-family: "ProximaNova Extrabld", sans-serif;
   text-transform: uppercase;
-  width:600px;
+  width: 600px;
   line-height: 1.1;
   padding-left: 180px;
   margin-top: 180px;
@@ -123,19 +139,257 @@ h5 {
   max-width: 960px;
   margin: 0 auto;
 }
-.slider__button{
-    text-decoration: none;
-    color: #fff;
-    background-color: #000;
-    padding: 18px 33px;
-    text-transform: uppercase;
-    font-size: 14px;
-    font-family: "ProximaNova Extrabld", sans-serif;
-    margin-left: 530px;
-    transition: .5s;
-   
+.slider__button {
+  text-decoration: none;
+  color: #fff;
+  background-color: #000;
+  padding: 18px 33px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: "ProximaNova Extrabld", sans-serif;
+  margin-left: 530px;
+  transition: 0.2s;
 }
-.slider__button:hover{
-    background-color: #4680ae;
-    color: #000;
+.slider__button:hover {
+  background-color: #f69ca1;
+  color: #000;
+}
+
+/* Goods */
+.goods__title {
+  font-family: "ProximaNova Extrabld", sans-serif;
+  text-transform: uppercase;
+  color: #000;
+  font-size: 48px;
+  text-align: center;
+
+  margin-top: 150px;
+}
+.goods__subtitle {
+  font-family: "ProximaNova Regular", sans-serif;
+  font-size: 14px;
+  color: #000;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 35px;
+}
+.cross__goods {
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  transition: 0.2s;
+}
+.cross__goods:hover {
+  transform: rotate(90deg);
+}
+.multiple-itmems {
+  margin: 0 auto;
+}
+
+/* SWIPERRRRR */
+
+.swiper {
+  width: 100%;
+  height: 405px;
+  margin-bottom: 60px;
+  margin-top: 120px;
+}
+.swiper-slide {
+  text-align: center;
+  opacity: 0.5;
+}
+.swiper-slide img {
+  max-width: 100%;
+}
+.swiper-slide-active {
+  opacity: 1;
+}
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 180px;
+  color: #000;
+  opacity: 0.2;
+}
+.swiper-button-prev {
+  left: 50px;
+}
+.swiper-button-next {
+  right: 50px;
+}
+
+
+/* Afterslider Text */
+.afterslider__text {
+  text-transform: uppercase;
+  font-size: 24px;
+  font-family: "ProximaNova Semibold", sans-serif;
+  color: #000;
+  text-align: center;
+  margin-bottom: 215px;
+}
+
+/* MOUNTAINS */
+.section--mountains {
+  height: 100vh;
+  width: 100%;
+  background: url(img/Mountains__bg.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.mountains {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+.mountains__title {
+  font-family: "ProximaNova Extrabld", sans-serif;
+  font-size: 48px;
+  color: #fff;
+  text-transform: uppercase;
+  line-height: 1.2;
+  margin-bottom: 80px;
+}
+.mountains__text {
+  font-family: "ProximaNova Regular", sans-serif;
+  font-size: 15px;
+  color: #fff;
+  width: 600px;
+}
+
+/* FEATURES */
+
+.features {
+  display: flex;
+  justify-content: space-between;
+}
+.features__img {
+  margin-bottom: 25px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.features__item:hover .features__img {
+  transform: scale(1.1);
+  opacity: 0.7;
+}
+.features__item:hover .features__text {
+  text-decoration: underline;
+  color: #f69ca1;
+}
+.features__text {
+  font-size: 16px;
+  color: #000;
+  font-family: "ProximaNova Semibold", sans-serif;
+  transition: 0.2s;
+}
+
+/* FOOTER */
+.footer {
+  background-color: #000;
+  color: #fff;
+  margin-top: 140px;
+}
+.footer__cols {
+  display: flex;
+  justify-content: space-between;
+}
+.col__links {
+  display: flex;
+  flex-direction: column;
+}
+
+.col__title {
+  text-transform: uppercase;
+  font-family: "ProximaNova Extrabld", sans-serif;
+  font-size: 17px;
+  margin-bottom: 30px;
+  margin-top: 80px;
+}
+.col__links a {
+  text-decoration: none;
+  font-size: 14px;
+  color: inherit;
+  display: inline;
+  transition: 0.2s;
+}
+.col__links a:hover {
+  color: #f69ca1;
+  border-bottom: 2px solid #f69ca1;
+}
+
+.footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 75px;
+  padding-bottom: 60px;
+}
+.bottom__left,
+.bottom__right {
+  font-size: 14px;
+  font-family: "ProximaNova Semibold", sans-serif;
+}
+.bottom__right img {
+  margin-right: 10px;
+}
+
+/* SUBSCRIBE */
+
+.subscribe {
+  width: 100%;
+  max-width: 220px;
+  display: flex;
+}
+.subscribe-input {
+  width: 73%;
+  background: #fff;
+  border: 1px solid #e7e7e7;
+  font-size: 15px;
+  font-style: italic;
+  font-weight: 300;
+  color: #333;
+  padding: 12px;
+  height: 40px;
+  line-height: 1.1;
+  border-right: 0;
+  font-family: "ProximaNova Redular", sans-serif;
+}
+.subscribe-input::placeholder {
+  color: #6c6c6c;
+}
+.subscribe-button {
+  width: 27%;
+  font-family: "ProximaNova Extrabld", sans-serif;
+  height: 40px;
+  background-color: #c7c7c7;
+  border: 0;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 12px 20px;
+  line-height: 1.1;
+  transition: 0.2s;
+}
+.subscribe-button:hover {
+  background-color: #f69ca1;
+}
+
+/* SOCIAL */
+.col__social a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  transition: 0.2s;
+}
+.col__social a:hover {
+  color: #f69ca1;
+  transform: scale(1.5);
+}
+.col__social {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
 }

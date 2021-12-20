@@ -1,47 +1,258 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>Snowboarding Website</title>
     <script
       src="https://kit.fontawesome.com/166961055b.js"
       crossorigin="anonymous"
     ></script>
-</head>
-<body>
+  </head>
+  <body>
     <header class="header">
-        <div class="header__menu">
-            <div class="menu__left">
-                <div class="menu__logo">
-                    <img src="img/Logo.png" alt="" width="70px">
-                </div>
-                <nav class="menu__nav">
-                    <a href="#" class="nav__item">Shop</a>
-                    <a href="#" class="nav__item">Team</a>
-                    <a href="#" class="nav__item">Events</a>
-                    <a href="#" class="nav__item">Experience</a>
-                    <a href="#" class="nav__item">Company</a>
-                    <a href="#" class="nav__item">Contact</a>
-                </nav>
-            </div>
-            <div class="menu__right">
-            
-                <a href="#" class="menu_icon"><i class="fas fa-search"></i></a>
-                <a href="#" class="menu_icon"><i class="fas fa-shopping-bag"></i></a>
-                <a href="#" class="menu_icon"><i class="fas fa-euro-sign"></i>0</a>
-        
-            </div>
-    </div>
-    <div class="header__content">
-        <div class="container">
-        <h1 class="slider__title">Run Over Everything</h1>
-        <a href="#" class="slider__button">See Details</a>
+      <div class="header__menu">
+        <div class="menu__left">
+          <div class="menu__logo">
+            <img src="img/Logo.png" alt="" width="70px" />
+          </div>
+          <nav class="menu__nav">
+            <a href="#" class="nav__item">Shop</a>
+            <a href="#" class="nav__item">Team</a>
+            <a href="#" class="nav__item">Events</a>
+            <a href="#" class="nav__item">Experience</a>
+            <a href="#" class="nav__item">Company</a>
+            <a href="#" class="nav__item">Contact</a>
+          </nav>
         </div>
-    </div>   
+        <div class="menu__right">
+          <a href="#" class="menu_icon"><i class="fas fa-search"></i></a>
+          <a href="#" class="menu_icon"><i class="fas fa-shopping-bag"></i></a>
+          <a href="#" class="menu_icon"><i class="fas fa-euro-sign"></i>0</a>
+        </div>
+      </div>
+      <div class="header__content">
+        <div class="container">
+          <h1 class="slider__title">Run Over Everything</h1>
+          <a href="#" class="slider__button">See Details</a>
+        </div>
+      </div>
     </header>
 
-</body>
+    <section class="section">
+      <div class="container">
+        <div class="goods__header">
+          <h2 class="goods__title">Snowboards</h2>
+          <h3 class="goods__subtitle">
+            Aliquam erat volutpat. Curabitur ut consequat arcu eget laoreet est
+          </h3>
+          <img class="cross__goods" src="img/x.png" alt="" />
+        </div>
+      </div>
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <img src="img/Boards/board1.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/Boards/board2.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/Boards/board3.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/Boards/board4.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/Boards/board5.png" alt="" />
+          </div>
+          
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+
+      <div class="container">
+        <h3 class="afterslider__text">Snowboard extreme series</h3>
+      </div>
+    </section>
+
+    <section class="section section--mountains">
+      <div class="container">
+        <div class="mountains">
+          <div class="mountains__title">
+            The Mountains <br />
+            Snowboarding ®
+          </div>
+          <div class="mountains__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+            tincidunt auctor facilisis. Nam massa dui, imperdiet et mi ut,
+            sagittis viverra odio. Duis et lectus eu enim gravida vulputate nec
+            eget nisi. Nunc ultrices velit blandit, dapibus lacus in, feugiat
+            erat. Donec non porttitor augue, sit amet lacinia purus. Nulla
+            fringilla quam est, luctus dapibus odio suscipit ut. Vivamus et
+            lectus a nunc fringilla volutpat. Morbi sed congue sem.
+            <br />
+            <br />
+            Aliquam erat volutpat. Curabitur ut consequat arcu, eget laoreet
+            est. Vivamus semper nibh sit amet libero hendrerit luctus. Fusce non
+            bibendum lorem. Fusce laoreet risus eget tortor lobortis egestas.
+            Etiam tempus quam sed felis viverra scelerisque. Integer fringilla
+            libero risus, vel euismod turpis auctor ac. Proin elementum aliquet
+            libero a dapibus. Mauris et tempor dolor.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="goods__header">
+          <h2 class="goods__title">Features</h2>
+          <img class="cross__goods" src="img/x.png" alt="" />
+        </div>
+
+        <div class="features">
+          <div class="features__item">
+            <div class="features__img">
+              <img src="img/Features/img1.jpg" alt="" />
+            </div>
+            <div class="features__text">
+              Born Identity: Bringing Burton Hardgoods to Life
+            </div>
+          </div>
+
+          <div class="features__item">
+            <div class="features__img">
+              <img src="img/Features/img2.jpg" alt="" />
+            </div>
+            <div class="features__text">
+              Born Identity: Bringing Burton Hardgoods to Life
+            </div>
+          </div>
+
+          <div class="features__item">
+            <div class="features__img">
+              <img src="img/Features/img3.jpg" alt="" />
+            </div>
+            <div class="features__text">
+              Born Identity: Bringing Burton Hardgoods to Life
+            </div>
+          </div>
+
+          <div class="features__item">
+            <div class="features__img">
+              <img src="img/Features/img4.jpg" alt="" />
+            </div>
+            <div class="features__text">
+              Born Identity: Bringing Burton Hardgoods to Life
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__cols">
+          <div class="col__item">
+            <div class="col__title">Products</div>
+            <div class="col__links">
+              <div class="col__links-item">
+                <a href="#">Mens</a>
+              </div>
+              <div class="col__links-item">
+                <a href="#">Womens</a>
+              </div>
+              <div class="col__links-item">
+                <a href="#">Youth</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col__item">
+            <div class="col__title">About</div>
+            <div class="col__links">
+                <div class="col__links-item">
+              <a href="#">Careers and Internships</a>
+              </div>
+              <div class="col__links-item">
+              <a href="#">Sponsorships</a>
+              </div>
+              <div class="col__links-item">
+              <a href="#">Team</a>
+              </div>
+              <div class="col__links-item">
+              <a href="#">Catalog Request/Download</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col__item">
+            <div class="col__title">Customer Support</div>
+            <div class="col__links">
+                <div class="col__links-item">
+              <a href="#">Contact Us</a>
+              </div>
+              <div class="col__links-item">
+              <a href="#">Shipping and Order Tracking</a>
+              </div>
+              <div class="col__links-item">
+              <a href="#">Easy Returns</a>
+              </div>
+              <div class="col__links-item">
+              <a href="#">Warranty</a>
+              </div>
+              <div class="col__links-item">
+              <a href="#">Replacement Binding Parts</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col__item">
+            <div class="col__title">Newsletter</div>
+            <form action="/" class="subscribe" method="post">
+              <input
+                class="subscribe-input"
+                type="email"
+                name="name"
+                placeholder="Enter your email"
+              />
+              <button type="submit" class="subscribe-button">Go</button>
+            </form>
+            <div class="col__social">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-pinterest"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <div class="bottom__left">© 2014 Mountains Snowboards</div>
+          <div class="bottom__right">
+            <img src="img/USA__flag.png" alt="" />
+            Change Region
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>
