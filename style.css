@@ -50,11 +50,6 @@ h5 {
   width: 100%;
   justify-content: space-between;
   height: 110px;
-  /* position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000; */
 }
 .menu__nav a {
   color: #fff;
@@ -148,6 +143,7 @@ h5 {
   font-size: 14px;
   font-family: "ProximaNova Extrabld", sans-serif;
   margin-left: 530px;
+<<<<<<< HEAD
   transition: 0.2s;
 }
 .slider__button:hover {
@@ -392,4 +388,11 @@ h5 {
   display: flex;
   justify-content: space-between;
   margin-top: 60px;
+=======
+  transition: 0.5s;
+}
+.slider__button:hover {
+  background-color: #4680ae;
+  color: #000;
+>>>>>>> a26c74a0f614883e232e9dfcb1bb02d86864cc56
 }
