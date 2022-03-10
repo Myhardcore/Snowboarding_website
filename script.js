@@ -1,5 +1,5 @@
-const slider = document.querySelector('.swiper');
-const slider1 = document.querySelector('.swiper1');
+let slider = document.querySelector('.swiper');
+let slider1 = document.querySelector('.swiper1');
 
 let swiper = new Swiper(slider, {
     // Optional parameters
